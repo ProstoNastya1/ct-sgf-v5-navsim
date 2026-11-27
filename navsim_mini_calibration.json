@@ -1,0 +1,1292 @@
+{
+  "horizon_steps": 40,
+  "evaluation_groups": 1,
+  "bank_subsets": [
+    {
+      "bank_groups": 1,
+      "bank_rollouts": 48,
+      "step_support": {
+        "all_supplied_queries": {
+          "supported": 0,
+          "total": 160,
+          "fraction": 0.0
+        },
+        "observed_at_risk_only": {
+          "supported": 0,
+          "total": 160,
+          "fraction": 0.0
+        },
+        "missing_query_steps": 0
+      },
+      "rollouts": {
+        "total": 4,
+        "known_full_horizon_labels": 4,
+        "unknown_due_to_right_censoring": 0,
+        "full_horizon_queries": 4,
+        "supported_full_horizon_queries": 0,
+        "known_labels_with_full_horizon_queries": 4,
+        "known_labels_with_supported_full_horizon_queries": 0
+      },
+      "conditional_hazard": {
+        "count": 0,
+        "brier_score": null,
+        "negative_log_likelihood": null,
+        "failure_probability_bins": [
+          {
+            "lower_inclusive": 0.0,
+            "upper": 0.1,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.1,
+            "upper": 0.2,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.2,
+            "upper": 0.3,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.3,
+            "upper": 0.4,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.4,
+            "upper": 0.5,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.5,
+            "upper": 0.6,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.6,
+            "upper": 0.7,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.7,
+            "upper": 0.8,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.8,
+            "upper": 0.9,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.9,
+            "upper": 1.0,
+            "upper_inclusive": true,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          }
+        ]
+      },
+      "prior_only": {
+        "count": 0,
+        "brier_score": null,
+        "negative_log_likelihood": null,
+        "failure_probability_bins": [
+          {
+            "lower_inclusive": 0.0,
+            "upper": 0.1,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.1,
+            "upper": 0.2,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.2,
+            "upper": 0.3,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.3,
+            "upper": 0.4,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.4,
+            "upper": 0.5,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.5,
+            "upper": 0.6,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.6,
+            "upper": 0.7,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.7,
+            "upper": 0.8,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.8,
+            "upper": 0.9,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.9,
+            "upper": 1.0,
+            "upper_inclusive": true,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          }
+        ]
+      },
+      "common_supported_calibration": {
+        "conditional": {
+          "count": 0,
+          "brier_score": null,
+          "negative_log_likelihood": null,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "log_kde": {
+          "count": 0,
+          "brier_score": null,
+          "negative_log_likelihood": null,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "trajectory_scorer": {
+          "count": 0,
+          "brier_score": null,
+          "negative_log_likelihood": null,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "stepwise_scorer": {
+          "count": 0,
+          "brier_score": null,
+          "negative_log_likelihood": null,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "event_only": {
+          "count": 0,
+          "brier_score": null,
+          "negative_log_likelihood": null,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        }
+      },
+      "available_baselines": [
+        "log_kde",
+        "trajectory_scorer",
+        "stepwise_scorer",
+        "event_only"
+      ]
+    },
+    {
+      "bank_groups": 2,
+      "bank_rollouts": 96,
+      "step_support": {
+        "all_supplied_queries": {
+          "supported": 80,
+          "total": 160,
+          "fraction": 0.5
+        },
+        "observed_at_risk_only": {
+          "supported": 80,
+          "total": 160,
+          "fraction": 0.5
+        },
+        "missing_query_steps": 0
+      },
+      "rollouts": {
+        "total": 4,
+        "known_full_horizon_labels": 4,
+        "unknown_due_to_right_censoring": 0,
+        "full_horizon_queries": 4,
+        "supported_full_horizon_queries": 2,
+        "known_labels_with_full_horizon_queries": 4,
+        "known_labels_with_supported_full_horizon_queries": 2
+      },
+      "conditional_hazard": {
+        "count": 2,
+        "brier_score": 0.3954262390296569,
+        "negative_log_likelihood": 0.9960213061579077,
+        "failure_probability_bins": [
+          {
+            "lower_inclusive": 0.0,
+            "upper": 0.1,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.1,
+            "upper": 0.2,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.2,
+            "upper": 0.3,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.3,
+            "upper": 0.4,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.4,
+            "upper": 0.5,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.5,
+            "upper": 0.6,
+            "upper_inclusive": false,
+            "count": 1,
+            "mean_predicted_failure": 0.5685173159059561,
+            "observed_failure_rate": 0.0
+          },
+          {
+            "lower_inclusive": 0.6,
+            "upper": 0.7,
+            "upper_inclusive": false,
+            "count": 1,
+            "mean_predicted_failure": 0.6838424815514177,
+            "observed_failure_rate": 0.0
+          },
+          {
+            "lower_inclusive": 0.7,
+            "upper": 0.8,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.8,
+            "upper": 0.9,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.9,
+            "upper": 1.0,
+            "upper_inclusive": true,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          }
+        ]
+      },
+      "prior_only": {
+        "count": 2,
+        "brier_score": 0.759491061254807,
+        "negative_log_likelihood": 2.0517317755020215,
+        "failure_probability_bins": [
+          {
+            "lower_inclusive": 0.0,
+            "upper": 0.1,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.1,
+            "upper": 0.2,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.2,
+            "upper": 0.3,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.3,
+            "upper": 0.4,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.4,
+            "upper": 0.5,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.5,
+            "upper": 0.6,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.6,
+            "upper": 0.7,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.7,
+            "upper": 0.8,
+            "upper_inclusive": false,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          },
+          {
+            "lower_inclusive": 0.8,
+            "upper": 0.9,
+            "upper_inclusive": false,
+            "count": 2,
+            "mean_predicted_failure": 0.8714878434348967,
+            "observed_failure_rate": 0.0
+          },
+          {
+            "lower_inclusive": 0.9,
+            "upper": 1.0,
+            "upper_inclusive": true,
+            "count": 0,
+            "mean_predicted_failure": null,
+            "observed_failure_rate": null
+          }
+        ]
+      },
+      "common_supported_calibration": {
+        "conditional": {
+          "count": 2,
+          "brier_score": 0.3954262390296569,
+          "negative_log_likelihood": 0.9960213061579077,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 1,
+              "mean_predicted_failure": 0.5685173159059561,
+              "observed_failure_rate": 0.0
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 1,
+              "mean_predicted_failure": 0.6838424815514177,
+              "observed_failure_rate": 0.0
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "log_kde": {
+          "count": 2,
+          "brier_score": 1.678123796270221e-31,
+          "negative_log_likelihood": 2.8966565307813045e-16,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 2,
+              "mean_predicted_failure": 2.8966565307813054e-16,
+              "observed_failure_rate": 0.0
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "trajectory_scorer": {
+          "count": 2,
+          "brier_score": 0.004099488055533152,
+          "negative_log_likelihood": 0.06226901848625173,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 2,
+              "mean_predicted_failure": 0.06011128352601162,
+              "observed_failure_rate": 0.0
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "stepwise_scorer": {
+          "count": 2,
+          "brier_score": 0.012843645911926861,
+          "negative_log_likelihood": 0.12019528200816226,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 2,
+              "mean_predicted_failure": 0.11324145876910169,
+              "observed_failure_rate": 0.0
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        },
+        "event_only": {
+          "count": 2,
+          "brier_score": 0.036260316660067515,
+          "negative_log_likelihood": 0.21116417829480294,
+          "failure_probability_bins": [
+            {
+              "lower_inclusive": 0.0,
+              "upper": 0.1,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.1,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "count": 2,
+              "mean_predicted_failure": 0.1903396402453493,
+              "observed_failure_rate": 0.0
+            },
+            {
+              "lower_inclusive": 0.2,
+              "upper": 0.3,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.3,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.4,
+              "upper": 0.5,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.5,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.6,
+              "upper": 0.7,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.7,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.8,
+              "upper": 0.9,
+              "upper_inclusive": false,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            },
+            {
+              "lower_inclusive": 0.9,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "count": 0,
+              "mean_predicted_failure": null,
+              "observed_failure_rate": null
+            }
+          ]
+        }
+      },
+      "available_baselines": [
+        "log_kde",
+        "trajectory_scorer",
+        "stepwise_scorer",
+        "event_only"
+      ]
+    }
+  ]
+}

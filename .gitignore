@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+/dataset/
+/datasets/
+/checkpoints/
+/metric_cache/
+/exp/
+*.ckpt
+*.pkl
+*.part
+/output/*.zip
+/output/pdf/
+/output/CT-SGF_v5_Explanation_EN.docx

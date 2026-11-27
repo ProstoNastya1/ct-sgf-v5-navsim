@@ -1,0 +1,94 @@
+{
+  "scope": "Cache-ready original pairs and two cached synthetic pairs per mapping. NAVSIM two-stage aggregation restricted to those pairs.",
+  "train_scenes": 53,
+  "original_scenes": 4,
+  "synthetic_scenes": 8,
+  "arms": {
+    "EgoStatusMLP": {
+      "epdms_for_subset": {
+        "stage_one": 41.93399129932905,
+        "stage_two": 27.378044172613013,
+        "combined": 0.0
+      },
+      "original": {
+        "scenarios": 4,
+        "raw_at_fault_count": 0,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 0.0
+      },
+      "synthetic": {
+        "scenarios": 8,
+        "raw_at_fault_count": 2,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 25.0
+      },
+      "all": {
+        "scenarios": 12,
+        "raw_at_fault_count": 2,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 16.666666666666668
+      }
+    },
+    "CT-SGF": {
+      "epdms_for_subset": {
+        "stage_one": 41.93399129932905,
+        "stage_two": 27.378044172613013,
+        "combined": 0.0
+      },
+      "original": {
+        "scenarios": 4,
+        "raw_at_fault_count": 0,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 0.0
+      },
+      "synthetic": {
+        "scenarios": 8,
+        "raw_at_fault_count": 2,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 25.0
+      },
+      "all": {
+        "scenarios": 12,
+        "raw_at_fault_count": 2,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 16.666666666666668
+      }
+    },
+    "LearnedScorer": {
+      "epdms_for_subset": {
+        "stage_one": 41.93399129932905,
+        "stage_two": 27.378044172613013,
+        "combined": 0.0
+      },
+      "original": {
+        "scenarios": 4,
+        "raw_at_fault_count": 0,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 0.0
+      },
+      "synthetic": {
+        "scenarios": 8,
+        "raw_at_fault_count": 2,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 25.0
+      },
+      "all": {
+        "scenarios": 12,
+        "raw_at_fault_count": 2,
+        "initial_at_fault_count": 0,
+        "raw_at_fault_percent": 16.666666666666668
+      }
+    }
+  },
+  "ct_vs_scorer_original": {
+    "at_fault_change_percentage_points": 0.0,
+    "at_fault_change_ci95_clustered_by_log": [
+      0.0,
+      0.0
+    ],
+    "log_clusters": 2,
+    "resolved": 0,
+    "introduced": 0,
+    "introduced_percent_of_original_successes": 0.0
+  }
+}

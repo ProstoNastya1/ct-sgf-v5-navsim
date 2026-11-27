@@ -1,0 +1,1545 @@
+{
+  "pinned_navsim_commit": "0a380a9063d7162ec93d0f51e9990ebac585f720",
+  "scope": "single-stage NAVSIM v2 raw score and first at-fault collision, non-reactive traffic",
+  "candidate_policy": "same physically feasible proposals; all evidence-based methods use conditional support; event-only may abstain on its own support; finite oracle uses all physically feasible proposals",
+  "horizon_steps": 40,
+  "interval_s": 0.1,
+  "bank_scenes": 12,
+  "bank_rollouts": 96,
+  "bank_first_events": 12,
+  "bank_groups": [
+    "sg-one-north",
+    "us-nv-las-vegas-strip"
+  ],
+  "evaluation_groups": [
+    "us-ma-boston"
+  ],
+  "skipped_initial_collisions": [],
+  "pilot_settings": {
+    "neighbors": 24,
+    "eta": 3.0,
+    "min_gain": 0.02,
+    "max_distance": 6.0
+  },
+  "base_step_support": 0.5,
+  "conditional_calibration": {
+    "count": 2,
+    "brier_score": 0.3954262390296569,
+    "negative_log_likelihood": 0.9960213061579077,
+    "failure_probability_bins": [
+      {
+        "lower_inclusive": 0.0,
+        "upper": 0.1,
+        "upper_inclusive": false,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      },
+      {
+        "lower_inclusive": 0.1,
+        "upper": 0.2,
+        "upper_inclusive": false,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      },
+      {
+        "lower_inclusive": 0.2,
+        "upper": 0.3,
+        "upper_inclusive": false,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      },
+      {
+        "lower_inclusive": 0.3,
+        "upper": 0.4,
+        "upper_inclusive": false,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      },
+      {
+        "lower_inclusive": 0.4,
+        "upper": 0.5,
+        "upper_inclusive": false,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      },
+      {
+        "lower_inclusive": 0.5,
+        "upper": 0.6,
+        "upper_inclusive": false,
+        "count": 1,
+        "mean_predicted_failure": 0.5685173159059561,
+        "observed_failure_rate": 0.0
+      },
+      {
+        "lower_inclusive": 0.6,
+        "upper": 0.7,
+        "upper_inclusive": false,
+        "count": 1,
+        "mean_predicted_failure": 0.6838424815514177,
+        "observed_failure_rate": 0.0
+      },
+      {
+        "lower_inclusive": 0.7,
+        "upper": 0.8,
+        "upper_inclusive": false,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      },
+      {
+        "lower_inclusive": 0.8,
+        "upper": 0.9,
+        "upper_inclusive": false,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      },
+      {
+        "lower_inclusive": 0.9,
+        "upper": 1.0,
+        "upper_inclusive": true,
+        "count": 0,
+        "mean_predicted_failure": null,
+        "observed_failure_rate": null
+      }
+    ]
+  },
+  "calibration_common_labeled_supported_scenes": {
+    "conditional": {
+      "count": 2,
+      "brier_score": 0.3954262390296569,
+      "negative_log_likelihood": 0.9960213061579077,
+      "failure_probability_bins": [
+        {
+          "lower_inclusive": 0.0,
+          "upper": 0.1,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.1,
+          "upper": 0.2,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.2,
+          "upper": 0.3,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.3,
+          "upper": 0.4,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.4,
+          "upper": 0.5,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.5,
+          "upper": 0.6,
+          "upper_inclusive": false,
+          "count": 1,
+          "mean_predicted_failure": 0.5685173159059561,
+          "observed_failure_rate": 0.0
+        },
+        {
+          "lower_inclusive": 0.6,
+          "upper": 0.7,
+          "upper_inclusive": false,
+          "count": 1,
+          "mean_predicted_failure": 0.6838424815514177,
+          "observed_failure_rate": 0.0
+        },
+        {
+          "lower_inclusive": 0.7,
+          "upper": 0.8,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.8,
+          "upper": 0.9,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.9,
+          "upper": 1.0,
+          "upper_inclusive": true,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        }
+      ]
+    },
+    "event_only": {
+      "count": 2,
+      "brier_score": 0.036260316660067515,
+      "negative_log_likelihood": 0.21116417829480294,
+      "failure_probability_bins": [
+        {
+          "lower_inclusive": 0.0,
+          "upper": 0.1,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.1,
+          "upper": 0.2,
+          "upper_inclusive": false,
+          "count": 2,
+          "mean_predicted_failure": 0.1903396402453493,
+          "observed_failure_rate": 0.0
+        },
+        {
+          "lower_inclusive": 0.2,
+          "upper": 0.3,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.3,
+          "upper": 0.4,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.4,
+          "upper": 0.5,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.5,
+          "upper": 0.6,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.6,
+          "upper": 0.7,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.7,
+          "upper": 0.8,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.8,
+          "upper": 0.9,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.9,
+          "upper": 1.0,
+          "upper_inclusive": true,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        }
+      ]
+    },
+    "log_kde": {
+      "count": 2,
+      "brier_score": 1.678123796270221e-31,
+      "negative_log_likelihood": 2.8966565307813045e-16,
+      "failure_probability_bins": [
+        {
+          "lower_inclusive": 0.0,
+          "upper": 0.1,
+          "upper_inclusive": false,
+          "count": 2,
+          "mean_predicted_failure": 2.8966565307813054e-16,
+          "observed_failure_rate": 0.0
+        },
+        {
+          "lower_inclusive": 0.1,
+          "upper": 0.2,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.2,
+          "upper": 0.3,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.3,
+          "upper": 0.4,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.4,
+          "upper": 0.5,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.5,
+          "upper": 0.6,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.6,
+          "upper": 0.7,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.7,
+          "upper": 0.8,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.8,
+          "upper": 0.9,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.9,
+          "upper": 1.0,
+          "upper_inclusive": true,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        }
+      ]
+    },
+    "trajectory_scorer": {
+      "count": 2,
+      "brier_score": 0.004099488055533151,
+      "negative_log_likelihood": 0.06226901848625172,
+      "failure_probability_bins": [
+        {
+          "lower_inclusive": 0.0,
+          "upper": 0.1,
+          "upper_inclusive": false,
+          "count": 2,
+          "mean_predicted_failure": 0.06011128352601161,
+          "observed_failure_rate": 0.0
+        },
+        {
+          "lower_inclusive": 0.1,
+          "upper": 0.2,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.2,
+          "upper": 0.3,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.3,
+          "upper": 0.4,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.4,
+          "upper": 0.5,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.5,
+          "upper": 0.6,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.6,
+          "upper": 0.7,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.7,
+          "upper": 0.8,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.8,
+          "upper": 0.9,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.9,
+          "upper": 1.0,
+          "upper_inclusive": true,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        }
+      ]
+    },
+    "stepwise_scorer": {
+      "count": 2,
+      "brier_score": 0.012843645911926861,
+      "negative_log_likelihood": 0.12019528200816226,
+      "failure_probability_bins": [
+        {
+          "lower_inclusive": 0.0,
+          "upper": 0.1,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.1,
+          "upper": 0.2,
+          "upper_inclusive": false,
+          "count": 2,
+          "mean_predicted_failure": 0.11324145876910169,
+          "observed_failure_rate": 0.0
+        },
+        {
+          "lower_inclusive": 0.2,
+          "upper": 0.3,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.3,
+          "upper": 0.4,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.4,
+          "upper": 0.5,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.5,
+          "upper": 0.6,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.6,
+          "upper": 0.7,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.7,
+          "upper": 0.8,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.8,
+          "upper": 0.9,
+          "upper_inclusive": false,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        },
+        {
+          "lower_inclusive": 0.9,
+          "upper": 1.0,
+          "upper_inclusive": true,
+          "count": 0,
+          "mean_predicted_failure": null,
+          "observed_failure_rate": null
+        }
+      ]
+    }
+  },
+  "paired": {
+    "conditional": {
+      "paired_scenes": 4,
+      "reference": "base",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "event_only": {
+      "paired_scenes": 4,
+      "reference": "base",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "raw_kernel": {
+      "paired_scenes": 4,
+      "reference": "base",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "log_kde": {
+      "paired_scenes": 4,
+      "reference": "base",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "trajectory_scorer": {
+      "paired_scenes": 4,
+      "reference": "base",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "stepwise_scorer": {
+      "paired_scenes": 4,
+      "reference": "base",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "finite_oracle": {
+      "paired_scenes": 4,
+      "reference": "base",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    }
+  },
+  "conditional_vs_baselines": {
+    "event_only": {
+      "paired_scenes": 4,
+      "reference": "event_only",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "raw_kernel": {
+      "paired_scenes": 4,
+      "reference": "raw_kernel",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "log_kde": {
+      "paired_scenes": 4,
+      "reference": "log_kde",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "trajectory_scorer": {
+      "paired_scenes": 4,
+      "reference": "trajectory_scorer",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    },
+    "stepwise_scorer": {
+      "paired_scenes": 4,
+      "reference": "stepwise_scorer",
+      "base_failure_rate": 0.0,
+      "method_failure_rate": 0.0,
+      "paired_difference": 0.0,
+      "fixed_failures": 0,
+      "reference_successes": 4,
+      "new_failures_on_reference_successes": 0,
+      "new_failure_rate_on_reference_successes": 0.0,
+      "raw_navsim_averages": {
+        "pdm_score": {
+          "base": 0.39924797402458767,
+          "method": 0.39924797402458767
+        },
+        "ego_progress": {
+          "base": 0.7178943272688455,
+          "method": 0.7178943272688455
+        },
+        "ego_progress_m": {
+          "base": 4.033410149653466,
+          "method": 4.033410149653466
+        },
+        "history_comfort": {
+          "base": 1.0,
+          "method": 1.0
+        }
+      }
+    }
+  },
+  "scenes": [
+    {
+      "scene": "8a3d3daf29af5620",
+      "log": "2021.08.09.17.55.59_veh-28_00021_00307",
+      "group": "us-ma-boston",
+      "searched_bank_scenes": 12,
+      "proposed_variants": 7,
+      "feasible_candidates_including_base": 8,
+      "supported_candidates_including_base": 0,
+      "base_supported_steps": 0,
+      "correction_reason": "base_unsupported",
+      "outcomes": {
+        "base": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        },
+        "conditional": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        },
+        "event_only": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        },
+        "raw_kernel": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        },
+        "log_kde": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        },
+        "trajectory_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        },
+        "stepwise_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        },
+        "finite_oracle": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.40220526047759314,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.7865018787419975,
+            "ego_progress_m": 4.090627871316569
+          }
+        }
+      },
+      "forecasts": {
+        "log_kde": [
+          1.7630297120602016e-78,
+          -1.7630297120602016e-78,
+          false,
+          -179.03460349713637
+        ],
+        "trajectory_scorer": [
+          0.16900945133569184,
+          -0.18513685763985296,
+          false,
+          -1.7778006405595463
+        ],
+        "stepwise_scorer": [
+          0.9999994292777709,
+          -14.376363209502827,
+          false,
+          -5.707223920048882e-07
+        ]
+      }
+    },
+    {
+      "scene": "e0d8d14e517f5491",
+      "log": "2021.08.09.17.55.59_veh-28_00021_00307",
+      "group": "us-ma-boston",
+      "searched_bank_scenes": 12,
+      "proposed_variants": 7,
+      "feasible_candidates_including_base": 8,
+      "supported_candidates_including_base": 0,
+      "base_supported_steps": 0,
+      "correction_reason": "base_unsupported",
+      "outcomes": {
+        "base": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        },
+        "conditional": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        },
+        "event_only": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        },
+        "raw_kernel": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        },
+        "log_kde": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        },
+        "trajectory_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        },
+        "stepwise_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        },
+        "finite_oracle": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 1.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 0.46937204859778897,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 1.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.8104900173563533,
+            "ego_progress_m": 12.033246736924573
+          }
+        }
+      },
+      "forecasts": {
+        "event_only": [
+          0.3561051983998291,
+          -0.4402199177736311,
+          false,
+          -1.0325290906588487
+        ],
+        "log_kde": [
+          3.528765937209105e-91,
+          -3.528765937209105e-91,
+          false,
+          -208.2742952454934
+        ],
+        "trajectory_scorer": [
+          0.02802533593377922,
+          -0.028425540636909233,
+          false,
+          -3.5746463231634023
+        ],
+        "stepwise_scorer": [
+          0.11286702973123536,
+          -0.11976039779660862,
+          false,
+          -2.181544881200018
+        ]
+      }
+    },
+    {
+      "scene": "2b18807eb18b5b7a",
+      "log": "2021.08.30.14.54.34_veh-40_00439_00835",
+      "group": "us-ma-boston",
+      "searched_bank_scenes": 12,
+      "proposed_variants": 7,
+      "feasible_candidates_including_base": 8,
+      "supported_candidates_including_base": 8,
+      "base_supported_steps": 40,
+      "correction_reason": "no_supported_improvement",
+      "outcomes": {
+        "base": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        },
+        "conditional": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        },
+        "event_only": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        },
+        "raw_kernel": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        },
+        "log_kde": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        },
+        "trajectory_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        },
+        "stepwise_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        },
+        "finite_oracle": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.0
+          }
+        }
+      },
+      "forecasts": {
+        "conditional": [
+          0.6838424815514177,
+          -1.1515147134900574,
+          false,
+          -0.3800276780099365
+        ],
+        "event_only": [
+          0.19591978462865317,
+          -0.21805624441753058,
+          false,
+          -1.6300499656209178
+        ],
+        "log_kde": [
+          2.622571293912695e-24,
+          -2.622571293912695e-24,
+          false,
+          -54.29788698546158
+        ],
+        "trajectory_scorer": [
+          0.038063116972109755,
+          -0.038806440626989375,
+          false,
+          -3.2685095241955175
+        ],
+        "stepwise_scorer": [
+          0.11771559866104778,
+          -0.1252408244536564,
+          false,
+          -2.1394837445162307
+        ]
+      }
+    },
+    {
+      "scene": "ab8ba2c089d95321",
+      "log": "2021.08.30.14.54.34_veh-40_00439_00835",
+      "group": "us-ma-boston",
+      "searched_bank_scenes": 12,
+      "proposed_variants": 7,
+      "feasible_candidates_including_base": 8,
+      "supported_candidates_including_base": 8,
+      "base_supported_steps": 40,
+      "correction_reason": "no_supported_improvement",
+      "outcomes": {
+        "base": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        },
+        "conditional": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        },
+        "event_only": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        },
+        "raw_kernel": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        },
+        "log_kde": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        },
+        "trajectory_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        },
+        "stepwise_scorer": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        },
+        "finite_oracle": {
+          "first_event": null,
+          "navsim_raw_metrics": {
+            "no_at_fault_collisions": 1.0,
+            "drivable_area_compliance": 0.0,
+            "driving_direction_compliance": 1.0,
+            "traffic_light_compliance": 1.0,
+            "ego_progress": 1.0,
+            "time_to_collision_within_bound": 1.0,
+            "lane_keeping": 0.0,
+            "history_comfort": 1.0,
+            "pdm_score": 0.0,
+            "ego_progress_m": 0.009765990372720523
+          }
+        }
+      },
+      "forecasts": {
+        "conditional": [
+          0.5685173159059561,
+          -0.8405278988257582,
+          false,
+          -0.5647235073179325
+        ],
+        "event_only": [
+          0.18475949586204543,
+          -0.2042721121720753,
+          false,
+          -1.688700322033298
+        ],
+        "log_kde": [
+          5.793313035336898e-16,
+          -5.793313035336896e-16,
+          false,
+          -35.08465716042351
+        ],
+        "trajectory_scorer": [
+          0.08215945007991346,
+          -0.08573159634551407,
+          false,
+          -2.49909340666669
+        ],
+        "stepwise_scorer": [
+          0.1087673188771556,
+          -0.11514973956266815,
+          false,
+          -2.218544367650112
+        ]
+      }
+    }
+  ]
+}
